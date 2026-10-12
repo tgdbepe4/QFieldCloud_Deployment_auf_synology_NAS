@@ -1,0 +1,20 @@
+# Nach /root/qfieldcloud/docker-compose.override.local.yml
+services:
+  nginx:
+    networks:
+      default:
+        aliases:
+          - qfield.example.com
+    volumes:
+      - static_volume:/usr/src/app/staticfiles:ro
+      - media_volume:/usr/src/app/mediafiles:ro
+  worker_wrapper:
+    environment:
+      REQUESTS_CA_BUNDLE: /etc/ssl/custom_certs/custom_ca.crt
+volumes:
+  static_volume:
+    external: true
+    name: qfieldcloud_static_volume
+  media_volume:
+    external: true
+    name: qfieldcloud_media_volume

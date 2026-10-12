@@ -1,0 +1,9 @@
+# RECONSTRUCTED - bitte mit dem Server abgleichen
+[Unit]
+Description=QFieldCloud Backup
+RequiresMountsFor=/mnt/qfc-backup
+
+[Service]
+Type=oneshot
+WorkingDirectory=/root/qfieldcloud
+ExecStart=/usr/local/bin/qfc-backup.sh
