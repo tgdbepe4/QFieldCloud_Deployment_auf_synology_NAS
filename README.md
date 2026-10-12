@@ -7,7 +7,8 @@ Testprojekt, um den Server spaeter neu aufsetzen zu koennen.
 ## Inhalt
 | Pfad | Beschreibung |
 |---|---|
-| `docs/QFieldCloud_Deployment_Dokumentation.docx` | Komplette Installations-, Betriebs-, Backup- und Restore-Doku (inkl. Netzwerkgrafiken) |
+| [`docs/QFieldCloud_Deployment_Dokumentation.md`](docs/QFieldCloud_Deployment_Dokumentation.md) | Komplette Installations-, Betriebs-, Backup- und Restore-Doku (inkl. Netzwerkgrafiken), direkt auf GitHub lesbar |
+| `docs/QFieldCloud_Deployment_Dokumentation.docx` | Dieselbe Doku als Word-Dokument (mit Inhaltsverzeichnis und Seitenzahlen) |
 | `docs/Reverse_Proxy_Checkliste.docx` | Generische 5-Schritte-Checkliste: neues Projekt ueber DSM-Reverse-Proxy veroeffentlichen |
 | `docs/QGIS_Authentifizierung_Hauptkennwort.docx` | QGIS-Hauptkennwort-Dialog bei QFieldCloud-Anmeldung |
 | `config/` | Override-Compose, nginx-Snippet, Netplan, fstab, systemd-Units, `.env`-Vorlage |
